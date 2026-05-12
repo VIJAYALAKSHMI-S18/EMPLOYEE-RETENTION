@@ -1,14 +1,15 @@
 # EMPLOYEE-RETENTION
-👩‍💼 Employee Retention Prediction System
-📌 Overview
-This project is a Machine Learning-based classification system that predicts whether an employee will leave the company or stay based on HR data.
-It uses Logistic Regression and is built using Python and Scikit-learn.
-The goal is to help companies understand employee behavior and improve retention strategies.
-🎯 Problem Statement
-To build a model that predicts whether an employee will leave the company (left = 1) or stay (left = 0) based on HR features like satisfaction level, salary, working hours, and more.
-📊 Dataset
+👩‍💼 Employee Retention Prediction
+Overview
+This project uses Machine Learning (Logistic Regression) to predict whether an employee will leave the company or stay based on HR data.
+Problem Statement
+Predict employee turnover (left = 0 or 1) using workplace and demographic features.
+Dataset
 File: HR_comma_sep.csv
-🔑 Features Used:
+Target: left
+0 → Stayed
+1 → Left
+Features Used
 satisfaction_level
 last_evaluation
 number_project
@@ -16,13 +17,36 @@ average_montly_hours
 time_spend_company
 Work_accident
 promotion_last_5years
-salary (categorical)
-🎯 Target Variable:
-left
-0 → Stayed
-1 → Left
-⚙️ Technologies Used
-Python 🐍
+salary
+Tech Stack
+Python
+Pandas
+NumPy
+Matplotlib
+Scikit-learn
+Model
+Logistic Regression (Binary Classification)
+Workflow
+Load dataset
+Preprocess data (one-hot encoding for salary)
+Split data into train/test sets
+Train Logistic Regression model
+Make predictions
+Evaluate accuracy
+Visualize results
+Evaluation
+Accuracy score using test data
+Prediction probabilities
+Model coefficients
+Visualization
+Satisfaction level vs Employee leaving (scatter plot)
+How to Run
+Bash
+pip install pandas numpy matplotlib scikit-learn
+Bash
+python app.py
+Key Insight
+Lower satisfaction levels strongly indicate higher chances of employee attrition.
 Pandas
 NumPy
 Matplotlib 📊
